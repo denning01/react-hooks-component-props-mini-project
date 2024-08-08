@@ -34,6 +34,7 @@ test("renders a <small> with the date of the post", () => {
       preview={"Setting up the building blocks of your site"}
     />
   );
+  screen.debug();
   const small = screen.queryByText(/December 15, 2020/);
   expect(small).toBeInTheDocument();
   expect(small.tagName).toBe("SMALL");

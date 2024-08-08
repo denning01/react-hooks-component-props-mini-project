@@ -1,12 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-function About({image, about}) {
+function About({ image = "https://via.placeholder.com/215", about }) {
   return (
     <div>
-        <aside>
-            <img src={image} alt={about} />
-             <p>{about} </p>
-        </aside>
+      <aside>
+        <img src={image} alt="blog logo" />
+        <p>{about}</p>
+      </aside>
     </div>
   );
 }

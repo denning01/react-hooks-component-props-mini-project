@@ -1,13 +1,15 @@
 import React from 'react';
 
 function Article({ post }) {
-  const defaultDate = "January 1, 1970"; // or any default date you prefer
-  const { title, date, preview } = post;
+  // Provide default values for the properties of post
+  const title = post?.title || "Untitled";
+  const date = post?.date || "January 1, 1970";
+  const preview = post?.preview || "No preview available";
 
   return (
     <article>
       <h3>{title}</h3>
-      <small>{date || defaultDate}</small>
+      <small>{date}</small>
       <p>{preview}</p>
     </article>
   );
