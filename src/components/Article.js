@@ -13,6 +13,7 @@ function Article({ post }) {
       <p>{preview}</p>
     </article>
   );
+  screen.debug();
 }
 
 export default Article;
